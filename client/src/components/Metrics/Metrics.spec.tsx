@@ -4,7 +4,6 @@ import { Metrics } from './Metrics'
 import { fetchMetrics } from '../../controller/controller.ts'
 import {render, screen, waitFor} from "@testing-library/react";
 import {ReactNode} from "react";
-import React from 'react';
 
 vi.mock('../../controller/controller.ts', () => ({
     fetchMetrics: vi.fn()
@@ -45,7 +44,6 @@ describe('Metrics Component', () => {
         render(<Metrics />, { wrapper: createWrapper() })
 
         await waitFor(() => {expect(screen.getByText(mockMetricsData)).toBeInTheDocument()})
-
     })
 
     it('handles error state', async () => {
