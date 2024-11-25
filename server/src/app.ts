@@ -22,7 +22,4 @@ app.get('/time', async (req: Request, res: Response) => {
     res.json({"epoch": currentTimeInEpochSeconds()});
 });
 
-
-
-
 const currentTimeInEpochSeconds = () => Math.floor(Date.now() / 1000)
