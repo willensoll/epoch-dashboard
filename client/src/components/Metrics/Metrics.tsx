@@ -1,7 +1,6 @@
 import {useQuery} from "@tanstack/react-query";
 import {fetchMetrics} from "../../controller/controller.ts";
 import "./metrics.css"
-import React from "react";
 
 export const Metrics = () => {
     const intervalMs = 30000;
