@@ -1,7 +1,19 @@
 {
-  "files": [],
+  "files": [
+    "./vite.config.ts"
+  ],
   "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "compilerOptions": {
+    "types": [
+      "vitest/globals",
+      "@testing-library/jest-dom"
+    ]
+  }
 }
